@@ -1,0 +1,26 @@
+{
+    "link1": 
+    {
+        "id"    : 0,
+        "name"  : "test string",
+        "url"   : "test.html"
+    },
+    "link2": 
+    { 
+        "id"    : 1,
+        "name"  : "Contacts",
+        "url"   : "contacts.html"
+    },
+    "link3": {
+        "id"    : 2,
+        "name"  : "Privacy Policy",
+        "url"   : "privacy-politic.html"
+    },
+    "link4":
+    {
+        "id"    : 3,
+        "name"  : "Terms & Conditions",
+        "url"   : "term.html"
+    }
+
+}

@@ -1,0 +1,49 @@
+{
+	"headerlogo" : "../img/logo.png",
+	"toplinks" :
+	{
+		"toplink1" : {
+			"name" : "About",
+			"url" : "/about",
+			"sublinks" : {}
+		},
+		"toplink2" : {
+			"name" : "Our Fleet",
+			"url" : "our-fFleet",
+			"sublinks" : {}
+		},
+		"toplink3" : {
+			"name" : "Investor Relations",
+			"url" : "/investorelations",
+			"sublinks" : {
+				"sublink1" : {
+					"name" : "Fleet Status Report",
+					"url" : "/sleet-status-report"
+				},
+				"sublink2" : {
+					"name" : "Events & Presentation",
+					"url" : "/events-presentation"
+				},
+				"sublink3" : {
+					"name" : "Stock Information",
+					"url" : "/stock-information"
+				}
+			}
+		},
+		"toplink4" : {
+			"name" : "Operational Excellence",
+			"url" : "/operational-excellence",
+			"sublinks" : {}
+		},
+		"toplink5" : {
+			"name" : "Careers",
+			"url" : "/careers",
+			"sublinks" : {}
+		},
+		"toplink6" : {
+			"name" : "Corporate Governance",
+			"url" : "/corporate-governance",
+			"sublinks" : {}
+		}
+	}
+}

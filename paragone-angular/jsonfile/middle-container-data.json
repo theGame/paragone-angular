@@ -1,0 +1,22 @@
+{
+    "lefttext":
+    {
+        "title" : "Paragon Offshore at a Glance",
+        "text" : "Paragon Offshore, spun off from Noble Corporation in 2014, is the leading pure-play provider of standard specification offshore drilling services. Our large diversified fleet, global presence and  well-established customer relationships position us for success in the dynamic offshore drilling industry."
+    },
+    "righttext":
+    {
+        "link1" :
+        {
+            "urlimg" : "../img/careers.png",
+            "title" : "Careers",
+            "description" : "Join the Paragon family."
+        },
+        "link2" :
+        {
+            "urlimg" : "../img/rig-fleet.png",
+            "title" : "Rig Fleet",
+            "description" : "Access our fleet status report."
+        }
+    }
+}
