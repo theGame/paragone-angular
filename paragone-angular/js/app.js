@@ -4,7 +4,7 @@ var app = /**
 *
 * Description
 */
-angular.module('paragoneApp', []);
+angular.module('paragoneApp', ['investor']);
 
 app.directive('headerLink', function(){
 	// Runs during compile
@@ -32,27 +32,6 @@ app.directive('headerLink', function(){
 		restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
 		//template: '<h1>test lalalal</h1>'
 		templateUrl: 'view/header-link.html',
-		// replace: true,
-		// transclude: true,
-		// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
-		link: function($scope, iElm, iAttrs, controller) {
-			
-		}
-	};
-});
-
-app.directive('mainSlider', function(){
-	// Runs during compile
-	return {
-		// name: '',
-		// priority: 1,
-		// terminal: true,
-		// scope: {}, // {} = isolate, true = child, false/undefined = no change
-		// controller: function($scope, $element, $attrs, $transclude) {},
-		// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
-		restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
-		// template: '',
-		templateUrl: 'view/main-slider.html',
 		// replace: true,
 		// transclude: true,
 		// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
@@ -91,6 +70,7 @@ app.directive('middleContainer', function(){
 		}
 	};
 });
+
 app.directive('footerPart', function(){
 	// Runs during compile
 	return {
@@ -113,6 +93,29 @@ app.directive('footerPart', function(){
 		restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
 		// template: '',
 		templateUrl: 'view/footer-part.html',
+		// replace: true,
+		// transclude: true,
+		// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
+		link: function($scope, iElm, iAttrs, controller) {
+			
+		}
+	};
+});
+
+var secondMod = angular.module('investor', []);
+
+secondMod.directive('mainSlider', function(){
+	// Runs during compile
+	return {
+		// name: '',
+		// priority: 1,
+		// terminal: true,
+		// scope: {}, // {} = isolate, true = child, false/undefined = no change
+		// controller: function($scope, $element, $attrs, $transclude) {},
+		// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
+		restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
+		// template: '',
+		templateUrl: 'view/main-slider.html',
 		// replace: true,
 		// transclude: true,
 		// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
