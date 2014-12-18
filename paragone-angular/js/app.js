@@ -102,6 +102,8 @@ app.directive('footerPart', function(){
 	};
 });
 
+
+/* MODULE secondMod */
 var secondMod = angular.module('investor', []);
 
 secondMod.directive('mainSlider', function(){
