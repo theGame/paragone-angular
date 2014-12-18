@@ -21,11 +21,12 @@ app.directive('headerLink', function(){
 					console.log(item.sublinks);
 					if ( item.sublinks.hasOwnProperty("sublink1") ){
 						item["disp"] = true;
-						console.log(item.disp); //display block
 					}
 				});
 				$scope.headerLinks = data;
-				console.log($scope.headerLinks);
+			})
+			.error(function(data, status, config){
+				$scope.headerLinks = status;
 			});
 		},
 		// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
@@ -53,8 +54,8 @@ app.directive('middleContainer', function(){
 			$http.get('jsonfile/middle-container-data.json').success(function(data, status, headers, config){
 				$scope.middleVal = data;
 				console.log("-------------------middleContainer-------------------------success");
-			}).
-			error(function(data, status, headers, config){
+			})
+			.error(function(data, status, headers, config){
 				$scope.middleVal = status;
 			})
 		},
@@ -83,8 +84,8 @@ app.directive('footerPart', function(){
 			$http.get('jsonfile/footerlinks.json').success(function(data, status, headers, config) {
 			  	$scope.flinks = data;
 			  	console.log("---------------------footerPart------------------------success");
-			 }).
-			error(function(data, status, headers, config) {
+			 })
+			.error(function(data, status, headers, config) {
 			  	$scope.flinks = status;
 			});
 
@@ -113,7 +114,15 @@ secondMod.directive('mainSlider', function(){
 		// priority: 1,
 		// terminal: true,
 		// scope: {}, // {} = isolate, true = child, false/undefined = no change
-		// controller: function($scope, $element, $attrs, $transclude) {},
+		controller: function($scope, $element, $attrs, $transclude, $http) {
+			$http.get('jsonfile/investors.json').success(function(data, config, headers, status){
+				$scope.investors = data; 
+				console.log('---------------------mainSlider------------------------success');
+			})
+			.error(function(data, status, headers, config){
+				$scope.investors = status;
+			});
+		},
 		// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
 		restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
 		// template: '',
