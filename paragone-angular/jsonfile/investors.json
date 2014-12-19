@@ -1,7 +1,9 @@
 {
 	"investors" : {
 		"item1" : {
-			"image" : "../img/01.jpg", 
+			"title" : "Try it Yourself Examples in Every Chapter",
+			"text" : "In every chapter, you can edit the examples online, and click on a button to view the result.",
+			"image" : "../img/slider/01.jpg", 
 			"volume" : 12.568,
 			"value1" : 48.99,
 			"value2" : 1.234,
@@ -21,7 +23,9 @@
 				}
 			},
 		"item2" : {
-			"image" : "../img/02.jpg", 
+			"title" : "What You Should Already Know",
+			"text" : "Before you study AngularJS, you should have a basic understanding of: HTML, CSS, JavaScript",
+			"image" : "../img/slider/02.jpg", 
 			"volume" : 15,
 			"value1" : 56.9954,
 			"value2" : 1.0,
@@ -37,7 +41,9 @@
 			}
 		},
 		"item3" : {
-			"image" : "../img/03.jpg", 
+			"title" : "AngularJS History",
+			"text" : "AngularJS is quite new. Version 1.0 was released in 2012. Miško Hevery, a Google employee, started to work on AngularJS in 2009. The idea turned out very good, and the project is now officially backed by a Google development team.",
+			"image" : "../img/slider/03.jpg", 
 			"volume" : 10.453,
 			"value1" : 66.66,
 			"value2" : 1.234,
@@ -48,13 +54,15 @@
 			"posts" : {}
 			},
 		"item4" : {
-			"image" : "../img/04.jpg", 
+			"title" : "AngularJS Examples",
+			"text" : "This tutorial contains lots of AngularJS examples!",
+			"image" : "../img/slider/04.jpg", 
 			"volume" : 33.4,
 			"value1" : 13.9,
 			"value2" : 3,
 			"wk" : {
-				"hight" : "27.05 52",
-				"low" : "15.86 52"
+				"hight" : "02.12 66",
+				"low" : "15.22 87"
 				},
 			"posts" : {
 				"post1" : {
@@ -68,13 +76,15 @@
 				}
 			},
 		"item5" : {
-			"image" : "../img/05.jpg", 
+			"title" : "AngularJS References",
+			"text" : "The references contain all directives and filters used in this tutorial.",
+			"image" : "../img/slider/05.jpg", 
 			"volume" : 11,
 			"value1" : 34,
 			"value2" : 1.000,
 			"wk" : {
-				"hight" : "27.05 52",
-				"low" : "15.86 52"
+				"hight" : "21.05 54",
+				"low" : "14.46 14"
 				},
 			"posts" : {}
 		}

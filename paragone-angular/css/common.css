@@ -116,36 +116,8 @@
 	.item{   
 		height: 545px;
 	}
-	.carousel-inner .item.photo1{
-		background: url('../img/slider/01.jpg') no-repeat center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
-	.carousel-inner .item.photo2{
-		background: url('../img/slider/02.jpg') no-repeat center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
-	.carousel-inner .item.photo3{
-		background: url('../img/slider/03.jpg') no-repeat center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
-	.carousel-inner .item.photo4{
-		background: url('../img/slider/04.jpg') no-repeat center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
-	.carousel-inner .item.photo5{
-		background: url('../img/slider/05.jpg') no-repeat center center;
+	.carousel-inner .item{
+		background: no-repeat center center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -237,6 +209,9 @@
 		float: right;
 		top: 40px;
 		background-image: url('../img/blue-button.png');
+	}
+	.stock-info-value, .stock-info-wk{
+		height: 18px;
 	}
 	.stock-info-value .val1, .stock-info-value .val2{
 		color: #fff;

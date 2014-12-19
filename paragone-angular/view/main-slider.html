@@ -1,22 +1,17 @@
 <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
 			<!-- Carousel indicators -->
 			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-				<li data-target="#myCarousel" data-slide-to="3"></li>
-				<li data-target="#myCarousel" data-slide-to="4"></li>
+				<li ng-repeat="item in investors.investors" ng-class="{'active' : $first}" data-target="#myCarousel" data-slide-to="{{$index}}"></li>
 			</ol>   
-			{{investors}}
 		   <!-- Carousel items -->
 			<div class="carousel-inner">
-				<div class="active item photo1">
+				<div class="item" ng-repeat="item in investors.investors" ng-class="{ 'active' : $first }" ng-style="{'background-image':'url({{item.image}})'}">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6">
-								<h2>Scale, Size and Expertise</h2>
+								<h2>{{item.title}}</h2>
 								<div class="carousel">
-									<p>Paragon’s 42 jackups and floaters provide drilling services in major hydrocarbon basins around the world.</p>
+									<p>{{item.text}}</p>
 								</div>
 								<a href="#" class="btn orange-btn" role="button"><span>Primary link</span></a>
 							</div>
@@ -26,232 +21,16 @@
 									<div class="stock-info">
 										<a href="#" class="stock-info-link"></a>
 										<p class="stock-info-title">PGN</p>
-										<p class="stock-info-volume">Volume 266,871</p>
+										<p class="stock-info-volume">Volume {{item.volume}}</p>
 										<p class="stock-info-value">
-											<span class="val1">51.02</span>
+											<span class="val1">{{item.value1}}</span>
 											<span class="val2">
-												1.58<span class="val3">change</span>
+												{{item.value2}}<span class="val3">change</span>
 											</span>
 										</p>
 										<p class="stock-info-wk">
-											<span class="val1">27.05  52 Wk high</span>
-											<span class="val2">15.86 52 wk low</span>
-										</p>
-										<p class="stock-info-nyse"><b>NYSE</b>    03.15.14 10:50 AM ET – Delayed 20 minutes</p>
-									</div>
-									<div class="inv-news">
-										<ul>
-											<li class="inv-news-list inv-news-first">
-												<p class="inv-news-date">
-													<span>03.26.2014</span>
-												</p>
-												<p class="inv-news-text">
-													<span>Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125 </span>
-												</p>
-											</li>
-											<li class="inv-news-list inv-news-last">
-												<p class="inv-news-date">
-													<span>03.02.2014</span>
-												</p>
-												<p class="inv-news-text">
-													<span>Paragon Second Quarter 2014 Earnings Conference Call Invitation</span>
-												</p>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item photo2">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<h2>Main chapter</h2>
-								<div class="carousel">
-									<p>Test text test text</p>
-								</div>
-								<a href="#" class="btn orange-btn" role="button"><span>Primary link</span></a>
-							</div>
-							<div class="col-md-6">
-								<div class="overlay-box">
-									<p class="investors">Investors<a href="#"></a></p>
-									<div class="stock-info">
-										<a href="#" class="stock-info-link"></a>
-										<p class="stock-info-title">PGN</p>
-										<p class="stock-info-volume">Volume 266,871</p>
-										<p class="stock-info-value">
-											<span class="val1">51.02</span>
-											<span class="val2">
-												1.58<span class="val3">change</span>
-											</span>
-										</p>
-										<p class="stock-info-wk">
-											<span class="val1">27.05  52 Wk high</span>
-											<span class="val2">15.86 52 wk low</span>
-										</p>
-										<p class="stock-info-nyse"><b>NYSE</b>    03.15.14 10:50 AM ET – Delayed 20 minutes</p>
-									</div>
-									<div class="inv-news">
-										<ul>
-											<li class="inv-news-list inv-news-first">
-												<p class="inv-news-date">
-													<span>03.26.2014</span>
-												</p>
-												<p class="inv-news-text">
-													<span>Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125 </span>
-												</p>
-											</li>
-											<li class="inv-news-list inv-news-last">
-												<p class="inv-news-date">
-													<span>03.02.2014</span>
-												</p>
-												<p class="inv-news-text">
-													<span>Paragon Second Quarter 2014 Earnings Conference Call Invitation</span>
-												</p>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item photo3">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<h2>Main chapter</h2>
-								<div class="carousel">
-									<p>Test text test text</p>
-								</div>
-								<a href="#" class="btn orange-btn" role="button"><span>Primary link</span></a>
-							</div>
-							<div class="col-md-6">
-								<div class="overlay-box">
-									<p class="investors">Investors<a href="#"></a></p>
-									<div class="stock-info">
-										<a href="#" class="stock-info-link"></a>
-										<p class="stock-info-title">PGN</p>
-										<p class="stock-info-volume">Volume 266,871</p>
-										<p class="stock-info-value">
-											<span class="val1">51.02</span>
-											<span class="val2">
-												1.58<span class="val3">change</span>
-											</span>
-										</p>
-										<p class="stock-info-wk">
-											<span class="val1">27.05  52 Wk high</span>
-											<span class="val2">15.86 52 wk low</span>
-										</p>
-										<p class="stock-info-nyse"><b>NYSE</b>    03.15.14 10:50 AM ET – Delayed 20 minutes</p>
-									</div>
-									<div class="inv-news">
-										<ul>
-											<li class="inv-news-list inv-news-first">
-												<p class="inv-news-date">
-													<span>03.26.2014</span>
-												</p>
-												<p class="inv-news-text">
-													<span>Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125 </span>
-												</p>
-											</li>
-											<li class="inv-news-list inv-news-last">
-												<p class="inv-news-date">
-													<span>03.02.2014</span>
-												</p>
-												<p class="inv-news-text">
-													<span>Paragon Second Quarter 2014 Earnings Conference Call Invitation</span>
-												</p>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item photo4">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<h2>Main chapter</h2>
-								<div class="carousel">
-									<p>Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.</p>
-								</div>
-								<a href="#" class="btn orange-btn" role="button"><span>Primary link</span></a>
-							</div>
-							<div class="col-md-6">
-								<div class="overlay-box">
-									<p class="investors">Investors<a href="#"></a></p>
-									<div class="stock-info">
-										<a href="#" class="stock-info-link"></a>
-										<p class="stock-info-title">PGN</p>
-										<p class="stock-info-volume">Volume 266,871</p>
-										<p class="stock-info-value">
-											<span class="val1">51.02</span>
-											<span class="val2">
-												1.58<span class="val3">change</span>
-											</span>
-										</p>
-										<p class="stock-info-wk">
-											<span class="val1">27.05  52 Wk high</span>
-											<span class="val2">15.86 52 wk low</span>
-										</p>
-										<p class="stock-info-nyse"><b>NYSE</b>    03.15.14 10:50 AM ET – Delayed 20 minutes</p>
-									</div>
-									<div class="inv-news">
-										<ul>
-											<li class="inv-news-list inv-news-first">
-												<p class="inv-news-date">
-													<span>03.26.2014</span>
-												</p>
-												<p class="inv-news-text">
-													<span>Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125 </span>
-												</p>
-											</li>
-											<li class="inv-news-list inv-news-last">
-												<p class="inv-news-date">
-													<span>03.02.2014</span>
-												</p>
-												<p class="inv-news-text">
-													<span>Paragon Second Quarter 2014 Earnings Conference Call Invitation</span>
-												</p>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item photo5">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<h2>Control sizing</h2>
-								<div class="carousel">
-									<p>Among other things, there's a bug in Firefox <30 that prevents us from setting the line-height of -based buttons, causing them to not exactly match the height of other buttons on Firefox.</p>
-								</div>
-								<a href="#" class="btn orange-btn" role="button"><span>Primary link</span></a>
-							</div>
-							<div class="col-md-6">
-								<div class="overlay-box">
-									<p class="investors">Investors<a href="#"></a></p>
-									<div class="stock-info">
-										<a href="#" class="stock-info-link"></a>
-										<p class="stock-info-title">PGN</p>
-										<p class="stock-info-volume">Volume 266,871</p>
-										<p class="stock-info-value">
-											<span class="val1">51.02</span>
-											<span class="val2">
-												1.58<span class="val3">change</span>
-											</span>
-										</p>
-										<p class="stock-info-wk">
-											<span class="val1">27.05  52 Wk high</span>
-											<span class="val2">15.86 52 wk low</span>
+											<span class="val1">{{item.wk.hight}} Wk high</span>
+											<span class="val2">{{item.wk.low}} wk low</span>
 										</p>
 										<p class="stock-info-nyse"><b>NYSE</b>    03.15.14 10:50 AM ET – Delayed 20 minutes</p>
 									</div>
