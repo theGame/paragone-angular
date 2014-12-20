@@ -1,11 +1,11 @@
 <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
 			<!-- Carousel indicators -->
 			<ol class="carousel-indicators">
-				<li ng-repeat="item in investors.investors" ng-class="{'active' : $first}" data-target="#myCarousel" data-slide-to="{{$index}}"></li>
+				<li ng-repeat="item in investors.investorer" ng-class="{'active' : $first}" data-target="#myCarousel" data-slide-to="{{$index}}"></li>
 			</ol>   
 		   <!-- Carousel items -->
 			<div class="carousel-inner">
-				<div class="item" ng-repeat="item in investors.investors" ng-class="{ 'active' : $first }" ng-style="{'background-image':'url({{item.image}})'}">
+				<div class="item" ng-repeat="item in investors.investorer" ng-class="{ 'active' : $first }" ng-style="{'background-image':'url({{item.image}})'}">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6">
@@ -36,20 +36,12 @@
 									</div>
 									<div class="inv-news">
 										<ul>
-											<li class="inv-news-list inv-news-first">
+											<li ng-repeat="post in item.posts" ng-class="inv-news-first">
 												<p class="inv-news-date">
-													<span>03.26.2014</span>
+													<span>{{post.date | date : yyyy-MM-dd }}</span>
 												</p>
 												<p class="inv-news-text">
-													<span>Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125 </span>
-												</p>
-											</li>
-											<li class="inv-news-list inv-news-last">
-												<p class="inv-news-date">
-													<span>03.02.2014</span>
-												</p>
-												<p class="inv-news-text">
-													<span>Paragon Second Quarter 2014 Earnings Conference Call Invitation</span>
+													<span>{{post.text}}</span>
 												</p>
 											</li>
 										</ul>

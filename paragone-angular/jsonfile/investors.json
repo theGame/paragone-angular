@@ -1,5 +1,5 @@
 {
-	"investors" : {
+	"investorer" : {
 		"item1" : {
 			"title" : "Try it Yourself Examples in Every Chapter",
 			"text" : "In every chapter, you can edit the examples online, and click on a button to view the result.",
@@ -14,11 +14,11 @@
 			"posts" : {
 				"post1" : {
 					"text" : "Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125",
-					"date" : "03.26.2014"
+					"date" : "2014-11-23T22:00:00.000Z"
 				},
 				"post2" : {
 					"text" : "Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125",
-					"date" : "03.26.2014"
+					"date" : "2014-11-08T22:00:00.000Z"
 					}
 				}
 			},
@@ -36,7 +36,7 @@
 			"posts" : {
 				"post1" : {
 					"text" : "Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125",
-					"date" : "12.16.2016"
+					"date" : "2014-06-17T22:00:00.000Z"
 				}
 			}
 		},
@@ -67,11 +67,11 @@
 			"posts" : {
 				"post1" : {
 					"text" : "This constant can now be injected into the module.config() function like this",
-					"date" : "03.01.2014"
+					"date" : "2013-12-27T22:00:00.000Z"
 				},
 				"post2" : {
 					"text" : "When you minify JavaScript the JavaScript minifier replaces the names of local variables and parameters with shorter names.",
-					"date" : "08.26.2012"
+					"date" : "2013-22-07T22:00:00.000Z"
 					}
 				}
 			},
