@@ -1,0 +1,87 @@
+{
+	"news" : [ {
+			"title" : "Try it Yourself Examples in Every Chapter",
+			"text" : "In every chapter, you can edit the examples online, and click on a button to view the result.",
+			"image" : "../img/slider/01.jpg", 
+			"volume" : 12.568,
+			"value1" : 48.99,
+			"value2" : 1.234,
+			"wk" : {
+				"hight" : "27.05 52",
+				"low" : "15.86 52"
+				},
+			"posts" : {
+				"post1" : {
+					"text" : "Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125",
+					"date" : "2014-11-23T22:00:00.000Z"
+				},
+				"post2" : {
+					"text" : "Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125",
+					"date" : "2014-11-08T22:00:00.000Z"
+					}
+				}
+			}, {
+			"title" : "Try it Yourself Examples in Every Chapter",
+			"text" : "In every chapter, you can edit the examples online, and click on a button to view the result.",
+			"image" : "../img/slider/01.jpg", 
+			"volume" : 12.568,
+			"value1" : 48.99,
+			"value2" : 1.234,
+			"wk" : {
+				"hight" : "27.05 52",
+				"low" : "15.86 52"
+				},
+			"posts" : {
+				"post1" : {
+					"text" : "Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125",
+					"date" : "2014-11-23T22:00:00.000Z"
+				},
+				"post2" : {
+					"text" : "Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125",
+					"date" : "2014-11-08T22:00:00.000Z"
+					}
+				}
+			}, {
+			"title" : "Try it Yourself Examples in Every Chapter",
+			"text" : "In every chapter, you can edit the examples online, and click on a button to view the result.",
+			"image" : "../img/slider/01.jpg", 
+			"volume" : 12.568,
+			"value1" : 48.99,
+			"value2" : 1.234,
+			"wk" : {
+				"hight" : "27.05 52",
+				"low" : "15.86 52"
+				},
+			"posts" : {
+				"post1" : {
+					"text" : "Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125",
+					"date" : "2014-11-23T22:00:00.000Z"
+				},
+				"post2" : {
+					"text" : "Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125",
+					"date" : "2014-11-08T22:00:00.000Z"
+					}
+				}
+			}, {
+			"title" : "Try it Yourself Examples in Every Chapter",
+			"text" : "In every chapter, you can edit the examples online, and click on a button to view the result.",
+			"image" : "../img/slider/01.jpg", 
+			"volume" : 12.568,
+			"value1" : 48.99,
+			"value2" : 1.234,
+			"wk" : {
+				"hight" : "27.05 52",
+				"low" : "15.86 52"
+				},
+			"posts" : {
+				"post1" : {
+					"text" : "Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125",
+					"date" : "2014-11-23T22:00:00.000Z"
+				},
+				"post2" : {
+					"text" : "Paragon Second Quarter EPS Equals $0.19 Ex of ($0.04) on Operating Income of $125",
+					"date" : "2014-11-08T22:00:00.000Z"
+					}
+				}
+			}]
+}

@@ -1,11 +1,11 @@
 <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
 			<!-- Carousel indicators -->
 			<ol class="carousel-indicators">
-				<li ng-repeat="item in investors.investorer" ng-class="{'active' : $first}" data-target="#myCarousel" data-slide-to="{{$index}}"></li>
+				<li ng-repeat="item in investorData.investorer" ng-class="{'active' : $first}" data-target="#myCarousel" data-slide-to="{{$index}}"></li>
 			</ol>   
 		   <!-- Carousel items -->
 			<div class="carousel-inner">
-				<div class="item" ng-repeat="item in investors.investorer" ng-class="{ 'active' : $first }" ng-style="{'background-image':'url({{item.image}})'}">
+				<div class="item" ng-repeat="item in investorData.investorer" ng-class="{ 'active' : $first }" ng-style="{'background-image':'url({{item.image}})'}">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6">
@@ -16,37 +16,7 @@
 								<a href="#" class="btn orange-btn" role="button"><span>Primary link</span></a>
 							</div>
 							<div class="col-md-6">
-								<div class="overlay-box">
-									<p class="investors">Investors<a href="#"></a></p>
-									<div class="stock-info">
-										<a href="#" class="stock-info-link"></a>
-										<p class="stock-info-title">PGN</p>
-										<p class="stock-info-volume">Volume {{item.volume}}</p>
-										<p class="stock-info-value">
-											<span class="val1">{{item.value1}}</span>
-											<span class="val2">
-												{{item.value2}}<span class="val3">change</span>
-											</span>
-										</p>
-										<p class="stock-info-wk">
-											<span class="val1">{{item.wk.hight}} Wk high</span>
-											<span class="val2">{{item.wk.low}} wk low</span>
-										</p>
-										<p class="stock-info-nyse"><b>NYSE</b>    03.15.14 10:50 AM ET – Delayed 20 minutes</p>
-									</div>
-									<div class="inv-news">
-										<ul>
-											<li ng-repeat="post in item.posts" ng-class="inv-news-first">
-												<p class="inv-news-date">
-													<span>{{post.date | date : yyyy-MM-dd }}</span>
-												</p>
-												<p class="inv-news-text">
-													<span>{{post.text}}</span>
-												</p>
-											</li>
-										</ul>
-									</div>
-								</div>
+								<container-block></container-block>
 							</div>
 						</div>
 					</div>

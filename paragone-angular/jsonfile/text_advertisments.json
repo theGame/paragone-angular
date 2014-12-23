@@ -1,0 +1,17 @@
+{
+	"invest_text_ad" : {
+		"title": "title",
+		"text": "text",
+		"link": "http://investors...."
+	},
+	"careers_text_ad" : {
+		"title": "Career title",
+		"text": "Career text",
+		"link": "http://career...."
+	},
+	"excelense_text_ad" : {
+		"title": "AngularJS History",
+		"text": "AngularJS is quite new. Version 1.0 was released in 2012. Miško Hevery, a Google employee, started to work on AngularJS in 2009. The idea turned out very good, and the project is now officially backed by a Google development team.",
+		"link": "http://investors...."
+	}
+}
