@@ -150,7 +150,7 @@ investorModule.directive('investorBlock', function(){
 		// transclude: true,
 		// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
 		link: function($scope, iElm, iAttrs, controller) {
-			
+
 		}
 	};
 });
@@ -166,7 +166,7 @@ newsModule.directive('newsBlock', function(){
 		controller: function($scope, $element, $attrs, $transclude, $http) {
 			$http.get('jsonfile/news.json').success(function(data, config, headers, status){
 				$scope.investors = data; 
-				console.log('---------------------mainSlider------------------------success');
+				console.log('---------------------newsBlock------------------------success');
 			})
 			.error(function(data, status, headers, config){
 				$scope.investors = status;
