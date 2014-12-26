@@ -9,22 +9,22 @@
 		{
 			"left_text_ad" : "careers_text_ad",
 			"right_block" : "news",
-			"image" : "../img/slider/02.jpg"
+			"bg_image" : "../img/slider/02.jpg"
 		},
 		{
 			"left_text_ad" : "excelense_text_ad",
 			"right_block" : "excelense",
-			"image" : "../img/slider/03.jpg"
+			"bg_image" : "../img/slider/03.jpg"
 		},
 		{
-			"title" : "AngularJS Examples",
-			"text" : "This tutorial contains lots of AngularJS examples!",
-			"image" : "../img/slider/04.jpg"
+			"left_text_ad" : "AngularJS Examples",
+			"right_block" : "This tutorial contains lots of AngularJS examples!",
+			"bg_image" : "../img/slider/04.jpg"
 		}
 		{
-			"title" : "AngularJS References",
-			"text" : "The references contain all directives and filters used in this tutorial.",
-			"image" : "../img/slider/05.jpg"
+			"left_text_ad" : "AngularJS References",
+			"right_block" : "The references contain all directives and filters used in this tutorial.",
+			"bg_image" : "../img/slider/05.jpg"
 		}
 
 	]
