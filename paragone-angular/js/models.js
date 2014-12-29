@@ -8,8 +8,20 @@ var app = /**
 *
 * Description
 */
-angular.module('paragoneApp', ['slaider', 'topLink', 'middleInfo', 'footerLink', 'investor', 'newsBlock']);
+angular.module('paragoneApp', ['slaider', 'topLink', 'middleInfo', 'footerLink', 'investor', 'newsBlock', 'ngRoute']);
 
+//configuration route
+app.config(['$routeProvider',function($routeProvider) {
+	$routeProvider
+		.when('/', {
+			templateUrl : 'index.html',
+			controller : 'bodyCtrl',
+			url : 'index.html'
+		})
+		.otherwise({
+        	redirectTo: '/'
+      	});
+}]);
 
 var slaiderModule = /**
 *	Module

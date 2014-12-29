@@ -131,6 +131,7 @@
       relatedTarget: relatedTarget,
       direction: direction
     })
+    
     this.$element.trigger(slideEvent)
     if (slideEvent.isDefaultPrevented()) return
 
@@ -171,7 +172,6 @@
 
     return this
   }
-
 
   // CAROUSEL PLUGIN DEFINITION
   // ==========================

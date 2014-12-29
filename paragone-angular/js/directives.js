@@ -112,6 +112,8 @@ slaiderModule.directive('mainSlider', function(){
 			.error(function(data, status, headers, config){
 				$scope.investorData = status;
 			});
+
+			var e = $.Event('slide', {direction: 'left'});
 		},
 		// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
 		restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
