@@ -14,9 +14,7 @@ angular.module('paragoneApp', ['slaider', 'topLink', 'middleInfo', 'footerLink',
 app.config(['$routeProvider',function($routeProvider) {
 	$routeProvider
 		.when('/', {
-			templateUrl : 'index.html',
-			controller : 'bodyCtrl',
-			url : 'index.html'
+			templateUrl : 'view/body-view.html'
 		})
 		.otherwise({
         	redirectTo: '/'

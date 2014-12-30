@@ -12,7 +12,7 @@ headerModule.directive('headerLink', function(){
 				console.log("---------------------headerlink-------------------------success");
 				
 				angular.forEach(data.toplinks, function(item) {
-					console.log(item.sublinks);
+					//console.log(item.sublinks);
 					if ( item.sublinks.hasOwnProperty("sublink1") ){
 						item["disp"] = true;
 					}
@@ -112,8 +112,6 @@ slaiderModule.directive('mainSlider', function(){
 			.error(function(data, status, headers, config){
 				$scope.investorData = status;
 			});
-
-			var e = $.Event('slide', {direction: 'left'});
 		},
 		// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
 		restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
