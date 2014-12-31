@@ -2,7 +2,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
-						<a ng-href="#" class="thumbnail">
+						<a ng-href="/#/" class="thumbnail">
 							<div id="header-logo"></div>
 						</a>
 					</div>
@@ -12,7 +12,7 @@
 							<div class="col-md-12">
 								<nav class="navbar-right" role="navigation">
 									<ul class="nav navbar-nav search-block">
-										<li><a href="#">Contact</a></li>
+										<li><a href="/#/">Contact</a></li>
 										<li><span>Search</span><input type="text" class="form-control"></li>
 									</ul>
 								</nav>
@@ -35,7 +35,7 @@
 												<a ng-href="{{link.url}}" class="dropdown-toggle" data-toggle="dropdown">{{link.name}}</a>
 												<ul class="dropdown-menu" role="menu" ng-if="link.disp == true"> <!-- look here -->
 													<li ng-repeat="sublink in link.sublinks">
-														<a href="#">{{sublink.name}}</a>
+														<a href="/#/">{{sublink.name}}</a>
 													</li>
 												</ul>
 											</li>
