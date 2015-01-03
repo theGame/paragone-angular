@@ -1,3 +1,3 @@
 app.controller('bodyCtrl', function(){
-	this.value = {};
+	// test string
 });

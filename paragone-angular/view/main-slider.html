@@ -1,32 +1,32 @@
 <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-			<!-- Carousel indicators -->
-			<ol class="carousel-indicators">
-				<li ng-repeat="item in investorData.investorer" ng-class="{'active' : $first}" data-target="#myCarousel" data-slide-to="{{$index}}"></li>
-			</ol>   
-		   <!-- Carousel items -->
-			<div class="carousel-inner">
-				<div class="item" ng-repeat="item in investorData.investorer" ng-class="{ 'active' : $first }" ng-style="{'background-image':'url({{item.image}})'}">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<h2>{{item.title}}</h2>
-								<div class="carousel">
-									<p>{{item.text}}</p>
-								</div>
-								<a href="#" class="btn orange-btn" role="button"><span>Primary link</span></a>
-							</div>
-							<div class="col-md-6">
-								<container-block></container-block>
-							</div>
+	<!-- Carousel indicators -->
+	<ol class="carousel-indicators">
+		<li ng-repeat="item in investorData.investorer" ng-class="{'active' : $first}" data-target="#myCarousel" data-slide-to="{{$index}}"></li>
+	</ol>   
+   <!-- Carousel items -->
+	<div class="carousel-inner">
+		<div class="item" ng-repeat="item in investorData.investorer" ng-class="{ 'active' : $first }" ng-style="{'background-image':'url({{item.image}})'}">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2>{{item.title}}</h2>
+						<div class="carousel">
+							<p>{{item.text}}</p>
 						</div>
+						<a href="#" class="btn orange-btn" role="button"><span>Primary link</span></a>
+					</div>
+					<div class="col-md-6">
+						<container-block></container-block>
 					</div>
 				</div>
 			</div>
-			<!-- Carousel nav -->
-			<a class="carousel-control left" href="#myCarousel" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-			</a>
-			<a class="carousel-control right" href="#myCarousel" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
 		</div>
+	</div>
+	<!-- Carousel nav -->
+	<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="carousel-control right" href="#myCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
