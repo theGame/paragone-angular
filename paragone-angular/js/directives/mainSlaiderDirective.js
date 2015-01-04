@@ -1,20 +1,14 @@
 'use strict';
 
-slaiderModule.directive('mainSlider', function(){
+slaiderModule.directive('mainSlider', function($animate){
 	// Runs during compile
 	return {
 		// name: '',
 		// priority: 1,
 		// terminal: true,
 		// scope: {}, // {} = isolate, true = child, false/undefined = no change
-		controller: function($scope, $element, $attrs, $transclude, $http) {
-			$http.get('jsonfile/investors.json').success(function(data, config, headers, status){
-				$scope.investorData = data; 
-				console.log('---------------------mainSlider------------------------success');
-			})
-			.error(function(data, status, headers, config){
-				$scope.investorData = status;
-			});
+		controller: function($scope, $element, $attrs, $transclude) {
+			
 		},
 		// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
 		restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment

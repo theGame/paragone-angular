@@ -1,4 +1,4 @@
-<div class="overlay-box" ng-repeat="item in investors.investorer">
+<div class="overlay-box">
 	<p class="investors">Investors<a href="#"></a></p>
 	<div class="stock-info">
 		<a href="#" class="stock-info-link"></a>
@@ -16,9 +16,9 @@
 		</p>
 		<p class="stock-info-nyse"><b>NYSE</b>    03.15.14 10:50 AM ET – Delayed 20 minutes</p>
 	</div>
-	<div class="inv-news">
+	<div class="inv-news" ng-if="item.posts">
 		<ul>
-			<li ng-repeat="post in item.posts" ng-class="'inv-news-last'">
+			<li ng-repeat="post in item.posts">
 				<p class="inv-news-date">
 					<span>{{post.date | date : yyyy-MM-dd }}</span>
 				</p>
@@ -27,5 +27,8 @@
 				</p>
 			</li>
 		</ul>
+	</div>
+	<p class="more-investor-news">
+		<b>More inverstor news</b><a href="/#/"></a>
 	</div>
 </div>
