@@ -1,45 +1,9 @@
-<!--<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-
-
-	<ol class="carousel-indicators">
-		<li ng-repeat="item in investorData.investorer" ng-class="{'active' : $first}" data-target="#myCarousel" data-slide-to="{{$index}}"></li>
-	</ol>   
-
-
-	<div class="carousel-inner">
-		<div class="item" ng-repeat="item in investorData.investorer" ng-class="{ 'active' : $first }" ng-style="{'background-image':'url({{item.image}})'}">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<h2>{{item.title}}</h2>
-						<div class="carousel">
-							<p>{{item.text}}</p>
-						</div>
-						<a href="#" class="btn orange-btn" role="button"><span>Primary link</span></a>
-					</div>
-					<div class="col-md-6">
-						<container-block></container-block>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<a class="carousel-control left" href="#myCarousel" data-slide="prev">
-		<span class="glyphicon glyphicon-chevron-left"></span>
-	</a>
-	<a class="carousel-control right" href="#myCarousel" data-slide="next">
-		<span class="glyphicon glyphicon-chevron-right"></span>
-	</a>
-</div> -->
-
 <div ng-controller="CarouselDemoCtrl">
 	<div ng-class="caruselHeight">
 		<carousel interval="myInterval">
-  			<slide ng-repeat="item in investorData.investorer" active="item.active">
-    			<img ng-src="{{item.image}}" style="margin:auto;">
-				<div class="container" ng-style='{"margin-top":"-470px"}'>
+  			<slide ng-repeat="item in investorData.investorer" active="item.active" ng-style='{"height":"575px"}'>
+    			<img ng-src="{{item.image}}" class="main-photo">
+				<div class="container" ng-style='{"margin-top":"-500px"}'>
 					<div class="row">
 						<div class="col-md-6">
 							<news-block></news-block>
