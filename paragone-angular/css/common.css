@@ -174,6 +174,9 @@
 	.carousel-inner .row .col-md-6:last-child{
 		padding: 50px 50px 0 0;
 	}
+	.carousel-inner .col-md-6{
+		padding-top: 30px;
+	}
 	p.investors{
 		font-size: 24px;
 		line-height: 28px;
