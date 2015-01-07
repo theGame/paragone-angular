@@ -171,6 +171,9 @@
 		padding-top: 65px;
 		text-align: left;
 	}
+	div.carousel-inner div.container{
+		margin-top: -530px;
+	}
 	.carousel-inner .row .col-md-6:last-child{
 		padding: 50px 50px 0 0;
 	}
@@ -403,6 +406,23 @@
 /* END FOOTER */
 
 
+}
+@media ( max-width: 1450px ){
+	div.carousel-inner div.container{
+		margin-top: -480px;
+	}
+}
+
+@media ( max-width: 1310px ){
+	div.carousel-inner div.container{
+		margin-top: -450px;
+	}
+}
+
+@media ( max-width: 1200px ){
+	main-slider{
+		display: none;
+	}
 }
 @media (max-width: 991px) {
 

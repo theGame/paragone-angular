@@ -1,9 +1,9 @@
 <div ng-controller="CarouselDemoCtrl">
 	<div ng-class="caruselHeight">
 		<carousel interval="myInterval">
-  			<slide ng-repeat="item in investorData.investorer" active="item.active" ng-style='{"height":"605px"}'>
+  			<slide ng-repeat="item in investorData.investorer" active="item.active" ng-style='{"height":"540px"}'>
     			<img ng-src="{{item.image}}" class="main-photo">
-				<div class="container" ng-style='{"margin-top":"-500px"}'>
+				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
 							<news-block></news-block>
