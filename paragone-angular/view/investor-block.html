@@ -24,6 +24,7 @@
 				</p>
 				<p class="inv-news-text">
 					<span>{{post.text | cutText}}</span>
+					<all-comment ng-if=" post.text.length >= 50 "></all-comment>
 				</p>
 			</li>
 		</ul>
