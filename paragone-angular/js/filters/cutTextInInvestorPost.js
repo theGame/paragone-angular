@@ -1,4 +1,4 @@
-app.filter('cutText', function(STARTPOINT){
+app.filter('cutTextInInvestorPost', function(STARTPOINT){
 	return function(post){
 		var res; 
 		var lastEmptyIndex;

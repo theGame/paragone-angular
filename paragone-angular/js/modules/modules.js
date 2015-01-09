@@ -16,6 +16,10 @@ app.config(['$routeProvider',function($routeProvider) {
 		.when('/', {
 			templateUrl : 'view/body-view.html'
 		})
+		.when('/:postText.html', {
+			templateUrl : 'view/all-comment.html',
+			controller : 'investorPostCtrl'
+		})
 		.otherwise({
         	redirectTo: '/'
       	});

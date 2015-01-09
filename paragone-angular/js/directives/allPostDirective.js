@@ -1,6 +1,6 @@
 'use strict';
 
-app.directive('allComment', function(){
+app.directive('allComment', function($routeParams){
  	// Runs during compile
  	return {
  		// name: '',

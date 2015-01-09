@@ -23,8 +23,12 @@
 					<span>{{post.date | date : yyyy-MM-dd }}</span>
 				</p>
 				<p class="inv-news-text">
-					<span>{{post.text | cutText}}</span>
-					<all-comment ng-if=" post.text.length >= 50 "></all-comment>
+					<span>{{post.text | cutTextInInvestorPost}}</span>
+					<div ng-if="post.text && post.text.length >= 50 ">
+						<div ng-class="'all-post'">
+							<a ng-href="#/text={{post.text}}&date={{post.date}}.html">All post</a>
+						</div>
+					</div>
 				</p>
 			</li>
 		</ul>

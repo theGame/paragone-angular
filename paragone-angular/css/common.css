@@ -277,7 +277,10 @@
 		display: inline;
 		text-align: left;
 		position: relative;
-		top: -20px;
+		top: -25px;
+	}
+	p.inv-news-text + div{
+		height: 0;
 	}
 	div.all-post a:active, div.all-post a:visited, div.all-post a:link{
 		color #337ab7;
@@ -625,4 +628,14 @@
 
 /* END FOOTER */
 
+}
+
+
+/* POST PAGE */
+@media screen and ( max-width: 1900px){
+	blockquote footer {
+		height: 0;
+		background: none;
+		padding-top: 0;
+	}
 }
