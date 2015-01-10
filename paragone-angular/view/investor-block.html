@@ -18,7 +18,7 @@
 	</div>
 	<div class="inv-news" ng-if="item.posts">
 		<ul>
-			<li ng-repeat="post in item.posts">
+			<li ng-repeat="post in item.posts | limitTo:2 ">
 				<p class="inv-news-date">
 					<span>{{post.date | date : yyyy-MM-dd }}</span>
 				</p>
@@ -26,7 +26,7 @@
 					<span>{{post.text | cutTextInInvestorPost}}</span>
 					<div ng-if="post.text && post.text.length >= 50 ">
 						<div ng-class="'all-post'">
-							<a ng-href="#/text={{post.text}}&date={{post.date}}.html">All post</a>
+							<a ng-href="#/text={{post.text}}&date={{post.date}}.html">All comment</a>
 						</div>
 					</div>
 				</p>

@@ -1,10 +1,18 @@
-app.filter('cutTextInInvestorPost', function(STARTPOINT){
+app.filter('cutTextInInvestorPost', function(myConfigConstant){
 	return function(post){
-		var res; 
-		var lastEmptyIndex;
-		res = post.slice(STARTPOINT, 60);
-		lastEmptyIndex = res.lastIndexOf(' ');
-		res = res.slice(STARTPOINT, lastEmptyIndex);
-		return res = res + '...';
+		if (post.length >= 50)
+		{
+			var res; 
+			var lastEmptyIndex;
+			res = post.slice(myConfigConstant.STARTPOINT, 60);
+			lastEmptyIndex = res.lastIndexOf(' ');
+			res = res.slice(myConfigConstant.STARTPOINT, lastEmptyIndex);
+			return res = res + '...';
+		}
+		else
+		{
+			return post;
+		}
+		
 	}
 });

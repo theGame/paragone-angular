@@ -278,6 +278,7 @@
 		text-align: left;
 		position: relative;
 		top: -25px;
+		left: 15px;
 	}
 	p.inv-news-text + div{
 		height: 0;
@@ -313,6 +314,7 @@
 		font-size: 14px;
 		line-height: 20px;
 		margin-bottom: 5px;
+		text-align: left;
 	}
 	p.inv-news-text span{
 		text-align: left;
