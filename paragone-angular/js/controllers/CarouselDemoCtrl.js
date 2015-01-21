@@ -1,4 +1,6 @@
-app.controller('CarouselDemoCtrl', function($scope, $http, $animate){
+'use strict';
+
+app.controller('CarouselDemoCtrl', function($scope, $http, $animate, bindingComent){
 	$http.get('jsonfile/investors.json').success(function(data, config, headers, status){
 		$scope.investorData = data; 
 		console.log('---------------------mainSlider------------------------success');
