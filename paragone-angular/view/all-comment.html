@@ -1,8 +1,9 @@
 <div ng-controller="investorPostCtrl" ng-class="'container'">
 	<div class="jumbotron row">
 		<blockquote>
-			<p ng-class="'lead'"> {{message | cutTextInPostPage }}</p>
-			<footer><cite title="data">{{ message | cutTextInDatePage | date : yyyy-MM-dd }}</cite></footer>
+			<!--<p ng-class="'lead'"> {{message | cutTextInPostPage }}</p>
+			<footer><cite title="data">{{ message | cutTextInDatePage | date : yyyy-MM-dd }}</cite></footer>-->
+			<p ng-class="'lead'">{{messageToCommentCtrl.message}}</p>
 		</blockquote>
 		<p><a class="btn btn-primary btn-lg" href="/#/" role="button">Paragone</a></p>
 	</div>

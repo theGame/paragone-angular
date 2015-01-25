@@ -1,6 +1,6 @@
 'use strict'
 
-app.factory('bindingComent', function(){
-	//console.log("factory --> " + this.investorData);
-	return {  }
+app.factory('BindingComent', function($rootScope){
+	//https://github.com/gsklee/ngStorage
+	return 0;
 });
