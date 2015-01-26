@@ -8,7 +8,7 @@ var app = /**
 *
 * Description
 */
-angular.module('paragoneApp', ['slaider', 'topLink', 'middleInfo', 'footerLink', 'investor', 'newsBlock', 'ngRoute', 'ui.bootstrap']);
+angular.module('paragoneApp', ['slaider', 'topLink', 'middleInfo', 'footerLink', 'investor', 'newsBlock', 'ngRoute', 'ui.bootstrap', 'ngStorage']);
 
 //configuration route
 app.config(['$routeProvider',function($routeProvider) {
