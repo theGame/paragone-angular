@@ -23,6 +23,10 @@ app.controller('CarouselDemoCtrl' , function($scope, $http, $animate, $localStor
 
 	$scope.passDataToComment = function(allText, date){
 
+		if( $localStorage.commentMessage || $localStorage.commentDate ){
+			$localStorage.$reset();
+		}
+
 		allText = 'data='+allText;
 
 		$scope.$storage = $localStorage.$default({
