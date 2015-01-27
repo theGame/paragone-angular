@@ -6,6 +6,6 @@ app.filter('cutTextInDatePage', function(myConfigConstant){
 		var firstPoint;
 		firstPoint = message.indexOf(myConfigConstant.CommentPageFilter1);
 		console.log(firstPoint);
-		return res = message.slice(firstPoint+5);
+		return res = message.slice(firstPoint+6);
 	}
 });

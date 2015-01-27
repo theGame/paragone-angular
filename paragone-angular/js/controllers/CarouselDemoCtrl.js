@@ -1,6 +1,6 @@
 //'use strict';
 
-app.controller('CarouselDemoCtrl' , function($scope, $http, $animate, BindingComent, $location, $rootScope ){
+app.controller('CarouselDemoCtrl' , function($scope, $http, $animate, $localStorage ){
 
 	$http.get('jsonfile/investors.json').success(function(data, config, headers, status){
 		$scope.investorData = data; 
@@ -13,7 +13,6 @@ app.controller('CarouselDemoCtrl' , function($scope, $http, $animate, BindingCom
 		$scope.investors = status;
 	})
 	.then(function(){
-		console.log("CarouselDemoCtrla --> " + $scope.investorData);
 		/*angular.forEach($scope.investorData.investorer, function(value, key){
 			console.log("value and key =", value + " " + key);
 			angular.forEach(value, function(test, la){
@@ -23,9 +22,13 @@ app.controller('CarouselDemoCtrl' , function($scope, $http, $animate, BindingCom
 	});
 
 	$scope.passDataToComment = function(allText, date){
-		$scope.messageToCommentCtrl = allText.concat("date=", date);
-		$scope.messageToCommentCtrl = BindingComent;
-		return $scope.messageToCommentCtrl;
+
+		allText = 'data='+allText;
+
+		$scope.$storage = $localStorage.$default({
+			commentMessage : allText,
+			commentDate : date
+		});
 	}
 
 });

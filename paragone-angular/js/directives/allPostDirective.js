@@ -1,6 +1,6 @@
 'use strict';
 
-app.directive('allComment', function($routeParams){
+app.directive('allComment', function($localStorage){
  	// Runs during compile
  	return {
  		// name: '',

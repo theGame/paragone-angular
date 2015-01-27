@@ -1,9 +1,11 @@
 <div ng-controller="investorPostCtrl" ng-class="'container'">
 	<div class="jumbotron row">
-		<blockquote>
-			<!--<p ng-class="'lead'"> {{message | cutTextInPostPage }}</p>
-			<footer><cite title="data">{{ message | cutTextInDatePage | date : yyyy-MM-dd }}</cite></footer>-->
-			<p ng-class="'lead'">{{messageToCommentCtrl.message}}</p>
+		<blockquote data-ng-if="commentDate && commentMessage">
+			<p ng-class="'lead'"> {{commentMessage | cutTextInDatePage }}</p>
+			<footer><cite title="data">{{ commentDate | date : yyyy-MM-dd }}</cite></footer>
+		</blockquote>
+		<blockquote data-ng-if="!commentDate || !commentMessage">
+			<p data-ng-class="'text-warning'">Something went wrong, please go to <a data-ng-class="'page-header'">Start Page !</a></p>
 		</blockquote>
 		<p><a class="btn btn-primary btn-lg" href="/#/" role="button">Paragone</a></p>
 	</div>

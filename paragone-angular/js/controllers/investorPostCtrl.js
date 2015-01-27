@@ -1,10 +1,11 @@
 'use strict';
 
-app.controller('investorPostCtrl', function($scope, $routeParams, BindingComent){	
+app.controller('investorPostCtrl', function($scope, $localStorage){	
 
-	//$scope.message = $routeParams.postText;  //when we want pass data with routerParams
+	//$scope.message = $routeParams.postText;  //when we want pass data with routerParams, need $routeParams in function and directive
 
-	$scope.messageToCommentCtrl = BindingComent;
+	$scope.commentDate = $localStorage.commentDate;
+	$scope.commentMessage = $localStorage.commentMessage;
 
 
 });

@@ -34,7 +34,7 @@ var slaiderModule = /**
 *
 * Description
 */
-angular.module('slaider', []);
+angular.module('slaider', ['ngStorage']);
 
 
 var investorModule = /**
@@ -42,7 +42,7 @@ var investorModule = /**
 *
 * Description
 */
-angular.module('investor', []);
+angular.module('investor', ['ngStorage']);
 
 
 var headerModule = /**
@@ -75,4 +75,3 @@ var newsModule = /**
 * Description
 */
 angular.module('newsBlock', []);
-
