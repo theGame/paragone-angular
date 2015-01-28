@@ -1,6 +1,6 @@
 'use strict';
 
-commentPage.directive('allComment', function($localStorage){
+allComment.directive('allComment', function($localStorage){
  	// Runs during compile
  	return {
  		// name: '',

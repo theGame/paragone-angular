@@ -25,9 +25,8 @@
 				<p class="inv-news-text">
 					<span>{{post.text | cutTextInInvestorPost}}</span>
 					<div ng-if="post.text && post.text.length >= 50 ">
-						<div ng-class="'all-post'">
-							<!--<a ng-href="#/text={{post.text}}&date={{post.date}}.html">All comment</a>-->
-							<a ng-href="/#comment.html" ng-model="post.text" ng-click="passDataToComment(post.text, post.date, '/#comment.html')">All comment</a>
+						<div ng-class="'all-post'">	
+							<a ng-href="/#/comment/" ng-model="post.text" ng-click="passDataToComment(post.text, post.date, '/#/comment/')">All comment</a>
 						</div>
 					</div>
 				</p>

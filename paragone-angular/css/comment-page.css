@@ -1,0 +1,9 @@
+#comment-page {
+	height: 100%;
+}
+#comment-page .all-comment{
+	min-height: 415px;
+}
+#comment-page .all-comment .jumbotron{
+	background-color: #fff;
+}
