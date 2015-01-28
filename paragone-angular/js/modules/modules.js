@@ -8,7 +8,7 @@ var app = /**
 *
 * Description
 */
-angular.module('paragoneApp', ['slaider', 'topLink', 'middleInfo', 'footerLink', 'investor', 'newsBlock', 'ngRoute', 'ui.bootstrap', 'ngStorage']);
+angular.module('paragoneApp', ['slaider', 'topLink', 'middleInfo', 'footerLink', 'investor', 'newsBlock', 'allComment', 'ngRoute', 'ui.bootstrap', 'ngStorage']);
 
 //configuration route
 app.config(['$routeProvider',function($routeProvider) {
@@ -75,3 +75,11 @@ var newsModule = /**
 * Description
 */
 angular.module('newsBlock', []);
+
+
+var commentPage = /**
+*	Module
+*
+* Description
+*/
+angular.module('allComment', []);
