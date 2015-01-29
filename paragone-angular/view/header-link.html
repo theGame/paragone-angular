@@ -12,8 +12,15 @@
 					<div class="col-md-12">
 						<nav class="navbar-right" role="navigation">
 							<ul class="nav navbar-nav search-block">
-								<li><a href="/#/">Contact</a></li>
-								<li><span>Search</span><input type="text" class="form-control"></li>
+								<li>
+									<a href="/#/">Contact</a>
+								</li>
+								<li data-ng-controller="searchCtrl">
+									<span>Search</span>
+									<form name="searchInput" method="post">
+										<input type="text" class="form-control" data-ng-model="searchText" data-ng-keypress="search($event)">
+									</form>
+								</li>
 							</ul>
 						</nav>
 					</div>

@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('investorPostCtrl', function($scope, $localStorage){	
+allComment.controller('investorPostCtrl', function($scope, $localStorage){	
 
 	//$scope.message = $routeParams.postText;  //when we want pass data with routerParams, need $routeParams in function and directive
 

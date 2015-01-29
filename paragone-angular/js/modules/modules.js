@@ -89,4 +89,4 @@ var pageComment = /**
 *
 * Description
 */
-angular.module('pageComment', []);
+angular.module('pageComment', ['allComment', 'topLink', 'footerLink']);
