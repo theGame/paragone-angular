@@ -2,7 +2,7 @@
 	<div class="jumbotron row">
 		<blockquote data-ng-if="commentDate && commentMessage">
 			<p ng-class="'lead'"> {{commentMessage | cutTextInDatePage }}</p>
-			<footer><cite title="data">{{ commentDate | date : yyyy-MM-dd }}</cite></footer>
+			<article><cite title="data">{{ commentDate | date : yyyy-MM-dd }}</cite></article>
 		</blockquote>
 		<blockquote data-ng-if="!commentDate || !commentMessage">
 			<p data-ng-class="'text-warning'">Something went wrong, please go to <a data-ng-class="'page-header'">Start Page !</a></p>

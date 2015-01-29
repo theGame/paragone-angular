@@ -1,9 +1,15 @@
 #comment-page {
 	height: 100%;
 }
-#comment-page .all-comment{
-	min-height: 415px;
-}
 #comment-page .all-comment .jumbotron{
 	background-color: #fff;
+}
+.all-comment article{
+	color: grey;
+	font-size: 14px;
+}
+#comment-page footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
