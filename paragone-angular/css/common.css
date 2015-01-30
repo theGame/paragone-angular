@@ -1,5 +1,6 @@
 
 @media screen and ( max-width: 1900px){
+	html{ height : 100%; }
 	body{
 		background: #fff;
 	}
