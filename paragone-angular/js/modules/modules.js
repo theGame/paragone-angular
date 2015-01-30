@@ -8,7 +8,7 @@ var app = /**
 *
 * Description
 */
-angular.module('paragoneApp', ['slaider', 'topLink', 'middleInfo', 'footerLink', 'investor', 'newsBlock', 'allComment', 'pageComment', 'ngRoute', 'ui.bootstrap', 'ngStorage']);
+angular.module('paragoneApp', ['slaider', 'topLink', 'middleInfo', 'footerLink', 'investor', 'newsBlock', 'allComment', 'login', 'pageComment', 'ngRoute', 'ui.bootstrap', 'ngStorage']);
 
 //configuration route
 app.config(['$routeProvider',function($routeProvider) {
@@ -22,6 +22,9 @@ app.config(['$routeProvider',function($routeProvider) {
 		.when('/:postText.html', {
 			templateUrl : 'view/all-comment.html',
 			controller : 'investorPostCtrl'
+		})
+		.when('/login/', {
+			templateUrl : 'view/log-in.html'
 		})
 		.otherwise({
         	redirectTo: '/'
@@ -90,3 +93,11 @@ var pageComment = /**
 * Description
 */
 angular.module('pageComment', ['allComment', 'topLink', 'footerLink']);
+
+
+var login = /**
+*	Module
+*
+* Description
+*/
+angular.module('login', []);

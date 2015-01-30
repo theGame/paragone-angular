@@ -2,8 +2,8 @@
     "link1": 
     {
         "id"    : 0,
-        "name"  : "test string",
-        "url"   : "test.html"
+        "name"  : "Log in",
+        "url"   : "login/"
     },
     "link2": 
     { 
