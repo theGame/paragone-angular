@@ -1,5 +1,22 @@
 <div data-ng-controller="loginCtrl" data-ng-class="'login-page'">
 	<div data-ng-class="'dialog-login'">
-		<p>sdjkfskjd</p>
+		<h2>Paragone Login</h2>
+		<div data-ng-class="'login-fields'">
+			<form action="login.php" method="post">
+				<span data-ng-class="'login-title'">username</span>
+				<p>
+					<input type="text" name="username" data-ng-model="username" value="username" placeholder="username" data-ng-class="'form-control'" autocomplete="on" autofocus required>
+				</p>
+				<span data-ng-class="'login-title'">password</span>
+				<p>
+					<input type="password" name="pass" data-ng-class="'form-control'" data-ng-model="pass"  placeholder="username" required>
+				</p>
+				<P>
+					<input type="checkbox" name="rememberMe" value=""><span data-ng-class="'remember-me'">Remember me !</span> 
+				</P>
+				<p><a data-ng-href="" data-ng-click="registerUser();">Create new account</a></p>
+				<a data-ng-class="'btn btn-primary sing-in'" role="button" data-ng-click="checkUser();">Sing in</a>
+			</form>
+		</div>
 	</div>
 </div>

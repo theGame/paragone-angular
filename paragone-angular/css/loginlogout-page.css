@@ -7,13 +7,40 @@
     overflow : hidden;
 	background-color: #011e41;
 }
-.dialog-login{
+.login-page .dialog-login{
 	background-color: #fff;
     width:300px;
-    height:200px;
+    height:270px;
     position:absolute;
     left:50%;
     top:50%;
-    margin:-100px 0 0 -150px;
+    margin:-130px 0 0 -150px;
     border-radius: 20px;
+    padding: 10px;
+}
+.login-page .dialog-login h2{
+	color: #003333;
+	margin-top: 0;
+	text-align: center;
+}
+.login-page span.login-title{
+	color: #003333;
+	text-transform: lowercase;
+	font-size: 18px;
+	font-weight: 700;
+	display: block;
+}
+.login-page span.login-title:first-letter{
+	color: #ffcc33;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.login-page .remember-me{
+	padding-left: 5px;
+	position: absolute;
+}
+.login-page .sing-in{
+	float: right;
+	position: relative;
+	bottom: 50px;
 }
