@@ -9,12 +9,12 @@
 				</p>
 				<span data-ng-class="'login-title'">password</span>
 				<p>
-					<input type="password" name="pass" data-ng-class="'form-control'" data-ng-model="pass"  placeholder="username" required>
+					<input type="password" name="pass" data-ng-class="'form-control'" data-ng-model="pass"  placeholder="password" required>
 				</p>
 				<P>
 					<input type="checkbox" name="rememberMe" value=""><span data-ng-class="'remember-me'">Remember me !</span> 
 				</P>
-				<p><a data-ng-href="" data-ng-click="registerUser();">Create new account</a></p>
+				<p><a data-ng-href="" data-ng-click="registerUser(username, pass);">Create new account</a></p>
 				<a data-ng-class="'btn btn-primary sing-in'" role="button" data-ng-click="checkUser();">Sing in</a>
 			</form>
 		</div>
