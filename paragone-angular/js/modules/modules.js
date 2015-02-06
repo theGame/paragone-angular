@@ -24,7 +24,8 @@ app.config(['$routeProvider',function($routeProvider) {
 			controller : 'investorPostCtrl'
 		})
 		.when('/login/', {
-			templateUrl : 'view/log-in.html'
+			templateUrl : 'view/log-in.html',
+			controller : 'loginCtrl'
 		})
 		.otherwise({
         	redirectTo: '/'

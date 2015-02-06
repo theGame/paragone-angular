@@ -1,6 +1,6 @@
 'use strict';
 
-login.controller('loginCtrl', function($scope, $sessionStorage){
+login.controller('loginCtrl', function($scope, $sessionStorage, $location){
 	
 	var existingUser ={
 		"name" : "yuriy.voytas",
@@ -9,7 +9,10 @@ login.controller('loginCtrl', function($scope, $sessionStorage){
 
 	$scope.checkUser = function(username, pass){
 		if(existingUser.name == this.username && existingUser.password == this.pass){
-			alert("yes");
+			$scope.$storage = $sessionStorage.$default({
+			    name: this.username
+			});
+			$location.path('/#/');
 		}
 	};
 
