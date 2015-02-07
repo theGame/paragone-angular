@@ -2,18 +2,34 @@
 
 login.controller('loginCtrl', function($scope, $sessionStorage, $location){
 	
-	var existingUser ={
+	var existingUser =[
+	{
 		"name" : "yuriy.voytas",
 		"password" : "test"  
-	}
+	},
+	{
+		"name" : "admin",
+		"password" : "admin"  
+	}];
 
 	$scope.checkUser = function(username, pass){
-		if(existingUser.name == this.username && existingUser.password == this.pass){
-			$scope.$storage = $sessionStorage.$default({
-			    name: this.username
-			});
-			$location.path('/#/');
-		}
+
+		var user = this.username;
+		var password = this.pass;
+
+		$sessionStorage.$reset();
+
+		var setUser;
+		setUser = angular.forEach(existingUser, function(value, key){
+			if(value.name == user && value.password == password){
+				$scope.$storage = $sessionStorage.$default({
+					user: user
+				});
+
+				$location.path('/#/');
+				return true;
+			}
+		});
 	};
 
 });
