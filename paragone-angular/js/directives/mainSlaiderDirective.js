@@ -1,6 +1,6 @@
 'use strict';
 
-slaiderModule.directive('mainSlider', function($animate){
+slaiderModule.directive('mainSlider', function(){ //$animate
 	// Runs during compile
 	return {
 		// name: '',

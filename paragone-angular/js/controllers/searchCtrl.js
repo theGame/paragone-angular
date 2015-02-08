@@ -1,6 +1,6 @@
 'use strict';
 
-headerModule.controller('searchCtrl', function($scope, $http){
+headerModule.controller('searchCtrl',['$scope', '$http', function($scope, $http){
 
 	$scope.url = 'search.php';
 
@@ -18,4 +18,4 @@ headerModule.controller('searchCtrl', function($scope, $http){
 			});
 		};		
 	};
-});
+}]);

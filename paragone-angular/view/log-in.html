@@ -1,5 +1,5 @@
 <div data-ng-controller="loginCtrl" data-ng-class="'login-page'">
-	<div data-ng-class="'dialog-login'">
+	<div data-ng-class="'dialog-login-no-user'" data-ng-if="!ngStorage-user">
 		<h2>Paragone Login</h2>
 		<div data-ng-class="'login-fields'">
 			<form action="login.php" method="post">
@@ -19,4 +19,5 @@
 			</form>
 		</div>
 	</div>
+	<div data-ng-class="'dialog-login-user'" data-ng-if="ngStorage-user">Ups!</div>
 </div>

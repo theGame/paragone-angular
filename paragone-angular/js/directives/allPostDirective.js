@@ -1,7 +1,7 @@
 'use strict';
 
-allComment.directive('allComment', function($localStorage){
- 	// Runs during compile
+allComment.directive('allComment', function(){//$localStorage
+  	// Runs during compile
  	return {
  		// name: '',
  		// priority: 1,

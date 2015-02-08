@@ -1,6 +1,6 @@
 'use strict';
 
-investorModule.directive('investorBlock', function(){
+investorModule.directive('investorBlock',  function(){
 	// Runs during compile
 	return {
 		// name: '',

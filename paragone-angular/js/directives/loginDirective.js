@@ -1,6 +1,6 @@
 'use strict';
 
-login.directive('logIn', function(){
+login.directive('logIn',  function(){
 	// Runs during compile
 	return {
 		// name: '',

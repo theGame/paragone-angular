@@ -1,6 +1,6 @@
 'use strict';
 
-login.controller('loginCtrl', function($scope, $sessionStorage, $location){
+login.controller('loginCtrl', ['$scope', '$sessionStorage', '$location', function($scope, $sessionStorage, $location){
 	
 	var existingUser =[
 	{
@@ -14,22 +14,21 @@ login.controller('loginCtrl', function($scope, $sessionStorage, $location){
 
 	$scope.checkUser = function(username, pass){
 
-		var user = this.username;
+		$scope.user = this.username;
 		var password = this.pass;
 
 		$sessionStorage.$reset();
 
 		var setUser;
 		setUser = angular.forEach(existingUser, function(value, key){
-			if(value.name == user && value.password == password){
+			if(value.name == $scope.user && value.password == password){
 				$scope.$storage = $sessionStorage.$default({
-					user: user
+					user: $scope.user
 				});
-
 				$location.path('/#/');
 				return true;
 			}
 		});
 	};
 
-});
+}]);

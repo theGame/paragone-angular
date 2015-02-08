@@ -1,6 +1,6 @@
 'use strict';
 
-allComment.controller('investorPostCtrl', function($scope, $localStorage){	
+allComment.controller('investorPostCtrl', ['$scope', '$localStorage', function($scope, $localStorage){	
 
 	//$scope.message = $routeParams.postText;  //when we want pass data with routerParams, need $routeParams in function and directive
 
@@ -8,4 +8,4 @@ allComment.controller('investorPostCtrl', function($scope, $localStorage){
 	$scope.commentMessage = $localStorage.commentMessage;
 
 
-});
+}]);

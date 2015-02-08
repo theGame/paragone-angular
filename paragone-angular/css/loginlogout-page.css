@@ -7,7 +7,7 @@
     overflow : hidden;
 	background-color: #011e41;
 }
-.login-page .dialog-login{
+.login-page .dialog-login-no-user{
 	background-color: #fff;
     width:300px;
     height:270px;
@@ -18,7 +18,17 @@
     border-radius: 20px;
     padding: 10px;
 }
-.login-page .dialog-login h2{
+.login-page .dialog-login-user{
+	background-color: #fff;
+    width:300px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-130px 0 0 -150px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.login-page .dialog-login-no-user h2{
 	color: #003333;
 	margin-top: 0;
 	text-align: center;

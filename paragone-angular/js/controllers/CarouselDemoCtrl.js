@@ -1,6 +1,6 @@
 'use strict';
 
-slaiderModule.controller('CarouselDemoCtrl' , function($scope, $http, $animate, $localStorage ){
+slaiderModule.controller('CarouselDemoCtrl', ['$scope', '$http', '$animate', '$localStorage', function($scope, $http, $animate, $localStorage ){
 
 	$http.get('jsonfile/investors.json').success(function(data, config, headers, status){
 		$scope.investorData = data; 
@@ -36,4 +36,4 @@ slaiderModule.controller('CarouselDemoCtrl' , function($scope, $http, $animate, 
 		});
 	}
 
-});
+}]);

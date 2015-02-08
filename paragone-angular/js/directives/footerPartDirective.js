@@ -16,7 +16,7 @@ footerModule.directive('footerPart', function(){
 			.error(function(data, status, headers, config) {
 			  	$scope.flinks = status;
 			});
-
+			
 		},
 		// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
 		restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
