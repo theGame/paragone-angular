@@ -1,5 +1,5 @@
 <div data-ng-controller="loginCtrl" data-ng-class="'login-page'">
-	<div data-ng-class="'dialog-login-no-user'" data-ng-if="!ngStorage-user">
+	<div data-ng-class="'dialog-login-no-user'" data-ng-if="!currentUser">
 		<h2>Paragone Login</h2>
 		<div data-ng-class="'login-fields'">
 			<form action="login.php" method="post">
@@ -19,5 +19,13 @@
 			</form>
 		</div>
 	</div>
-	<div data-ng-class="'dialog-login-user'" data-ng-if="ngStorage-user">Ups!</div>
+	<div data-ng-class="'dialog-login-user'" data-ng-if="currentUser">
+		<p>
+			<span><span ng-class="'first-l'">You</span> are logged as <a data-ng-href="/#/{{currentUser}}/">{{currentUser}}</a> !</span>
+		</p>
+		<ul ng-class="'nav nav-stacked'">
+			<li role="presentation"><a data-ng-href="/#/" ng-click="logOut();">log out</a></li>
+			<li role="presentation"><a data-ng-href="/#/">home</a></li>
+		</ul>
+	</div>
 </div>

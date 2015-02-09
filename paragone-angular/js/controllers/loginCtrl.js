@@ -12,6 +12,12 @@ login.controller('loginCtrl', ['$scope', '$sessionStorage', '$location', functio
 		"password" : "admin"  
 	}];
 
+	if($sessionStorage.user){
+		$scope.currentUser = $sessionStorage.user;
+	}
+	else
+		$scope.currentUser = false;
+
 	$scope.checkUser = function(username, pass){
 
 		$scope.user = this.username;
@@ -29,6 +35,10 @@ login.controller('loginCtrl', ['$scope', '$sessionStorage', '$location', functio
 				return true;
 			}
 		});
+	};
+
+	$scope.logOut = function(){
+		delete $sessionStorage.user;
 	};
 
 }]);

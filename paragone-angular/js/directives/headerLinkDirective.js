@@ -9,7 +9,6 @@ headerModule.directive('headerLink', function(){
 		// scope: {}, // {} = isolate, true = child, false/undefined = no change
 		controller: function($scope, $element, $attrs, $transclude, $http) {
 			$http.get('jsonfile/headerlinks.json').success(function(data, status, headers, config){
-				console.log("---------------------headerlink-------------------------success");
 				
 				angular.forEach(data.toplinks, function(item) {
 					//console.log(item.sublinks);

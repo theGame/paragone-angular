@@ -18,16 +18,6 @@
     border-radius: 20px;
     padding: 10px;
 }
-.login-page .dialog-login-user{
-	background-color: #fff;
-    width:300px;
-    position:absolute;
-    left:50%;
-    top:50%;
-    margin:-130px 0 0 -150px;
-    border-radius: 20px;
-    padding: 10px;
-}
 .login-page .dialog-login-no-user h2{
 	color: #003333;
 	margin-top: 0;
@@ -44,6 +34,7 @@
 	color: #ffcc33;
 	font-size: 22px;
 	text-transform: uppercase;
+	display: inline;
 }
 .login-page .remember-me{
 	padding-left: 5px;
@@ -54,3 +45,48 @@
 	position: relative;
 	bottom: 50px;
 }
+.login-page .dialog-login-user{
+	background-color: #fff;
+    width:300px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-130px 0 0 -150px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.login-page .dialog-login-user{
+	color: #ffcc33;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.login-page .dialog-login-user p{
+	text-align: center;
+	color: #003333;
+	text-transform: lowercase;
+	font-size: 15px;
+	font-weight: 700;
+}
+.login-page .dialog-login-user ul{
+	color: #337ab7;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: center;
+}
+.login-page .dialog-login-user .nav-stacked>li:hover{
+	border: solid 1px;
+	border-radius: 5px;
+}
+.login-page .dialog-login-user .nav>li>a:hover, .login-page .dialog-login-user .nav>li>a:focus{
+	background-color: #ffcc33;
+	opacity: 0.7;
+	filter: alpha(Opacity=70);
+}
+.login-page .dialog-login-user p span.first-l{
+	display: inline-block;
+}
+.login-page .dialog-login-user p span.first-l:first-letter{
+	text-transform: uppercase !important;
+	color: #ffcc33;
+}
+

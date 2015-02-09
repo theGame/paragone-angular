@@ -11,7 +11,6 @@ middleModule.directive('middleContainer', function(){
 
 			$http.get('jsonfile/middle-container-data.json').success(function(data, status, headers, config){
 				$scope.middleVal = data;
-				console.log("-------------------middleContainer-------------------------success");
 			})
 			.error(function(data, status, headers, config){
 				$scope.middleVal = status;

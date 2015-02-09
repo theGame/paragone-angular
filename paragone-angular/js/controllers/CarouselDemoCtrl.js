@@ -4,7 +4,6 @@ slaiderModule.controller('CarouselDemoCtrl', ['$scope', '$http', '$animate', '$l
 
 	$http.get('jsonfile/investors.json').success(function(data, config, headers, status){
 		$scope.investorData = data; 
-		console.log('---------------------mainSlider------------------------success');
 		//Deferred()
 		//dfr.resolve();
 		//return dfr.promise;item1

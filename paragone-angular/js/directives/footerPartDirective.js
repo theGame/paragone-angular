@@ -11,7 +11,6 @@ footerModule.directive('footerPart', function(){
 
 			$http.get('jsonfile/footerlinks.json').success(function(data, status, headers, config) {
 			  	$scope.flinks = data;
-			  	console.log("---------------------footerPart------------------------success");
 			 })
 			.error(function(data, status, headers, config) {
 			  	$scope.flinks = status;

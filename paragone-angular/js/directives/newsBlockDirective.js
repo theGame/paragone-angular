@@ -10,7 +10,6 @@ newsModule.directive('newsBlock', function(){
 		controller: function($scope, $element, $attrs, $transclude, $http) {
 			$http.get('jsonfile/news.json').success(function(data, config, headers, status){
 				$scope.investors = data; 
-				console.log('---------------------newsBlock------------------------success');
 			})
 			.error(function(data, status, headers, config){
 				$scope.investors = status;
