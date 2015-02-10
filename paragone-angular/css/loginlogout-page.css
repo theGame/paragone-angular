@@ -39,12 +39,55 @@
 .login-page .remember-me{
 	padding-left: 5px;
 	position: absolute;
+	cursor: pointer;
 }
 .login-page .sing-in{
 	float: right;
 	position: relative;
 	bottom: 50px;
 }
+/*---button generator----*/
+.login-page .btn-login { 
+  color: #ffffff; 
+  background-color: #004394; 
+  border-color: #F3F7B4; 
+} 
+ 
+.login-page .btn-login:hover, 
+.login-page .btn-login:focus, 
+.login-page .btn-login:active, 
+.login-page .btn-login.active, 
+.login-page .open .dropdown-toggle.btn-login { 
+  color: #ffffff; 
+  background-color: #0958B8; 
+  border-color: #F3F7B4; 
+} 
+ 
+.login-page .btn-login:active, 
+.login-page .btn-login.active, 
+.login-page .open .dropdown-toggle.btn-login { 
+  background-image: none; 
+} 
+ 
+.login-page .btn-login.disabled, 
+.login-page .btn-login[disabled], 
+.login-page fieldset[disabled] .btn-login, 
+.login-page .btn-login.disabled:hover, 
+.login-page .btn-login[disabled]:hover, 
+.login-page fieldset[disabled] .btn-login:hover, 
+.login-page .btn-login.disabled:focus, 
+.login-page .btn-login[disabled]:focus, 
+.login-page fieldset[disabled] .btn-login:focus, 
+.login-page .btn-login.disabled:active, 
+.login-page .btn-login[disabled]:active, 
+.login-page fieldset[disabled] .btn-login:active, 
+.login-page .btn-login.disabled.active, 
+.login-page .btn-login[disabled].active, 
+.login-page fieldset[disabled] .btn-login.active { 
+  background-color: #004394; 
+  border-color: #F3F7B4; 
+} 
+/*----------------------*/
 .login-page .dialog-login-user{
 	background-color: #fff;
     width:300px;

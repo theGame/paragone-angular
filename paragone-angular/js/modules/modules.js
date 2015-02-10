@@ -27,6 +27,10 @@ app.config(['$routeProvider',function($routeProvider) {
 			templateUrl : 'view/log-in.html',
 			controller : 'loginCtrl'
 		})
+		.when('/register/', {
+			templateUrl : 'view/register.html',
+			controller : 'registerCtrl'
+		})
 		.otherwise({
         	redirectTo: '/'
       	});

@@ -19,10 +19,10 @@ login.controller('loginCtrl', ['$scope', '$sessionStorage', '$location', functio
 		$scope.currentUser = false;
 
 	$scope.checkUser = function(username, pass){
-
+		
 		$scope.user = this.username;
 		var password = this.pass;
-
+		
 		$sessionStorage.$reset();
 
 		var setUser;
@@ -40,5 +40,13 @@ login.controller('loginCtrl', ['$scope', '$sessionStorage', '$location', functio
 	$scope.logOut = function(){
 		delete $sessionStorage.user;
 	};
+
+	$scope.rememberMe = function(){
+		if(document.getElementsByName('rememberMe')[0].checked === false){
+			document.getElementsByName('rememberMe')[0].checked = true;
+		}
+		else
+			document.getElementsByName('rememberMe')[0].checked = false;
+	}
 
 }]);
