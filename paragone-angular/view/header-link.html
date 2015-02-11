@@ -54,7 +54,7 @@
 			</div>
 		</div>
 	</div>
-	<div data-ng-show="currentUser" data-ng-class="'current-user'" data-ng-controller="userCtrl">
+	<div data-ng-hide="!currentUser" data-ng-class="'current-user'" data-ng-controller="userCtrl">
 		<div data-ng-class="'user-name'">
 			<a data-ng-href="/#/{{currentUser}}/" data-ng-bind="currentUser"></a>
 		</div>

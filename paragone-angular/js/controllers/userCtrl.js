@@ -1,6 +1,6 @@
 'use strict';
 
-headerModule.controller('userCtrl', ['$scope', '$sessionStorage', '$element', function($scope, $sessionStorage, $element){
+headerModule.controller('userCtrl', ['$scope', '$sessionStorage', function($scope, $sessionStorage){
 	
 	if($sessionStorage.user){
 		$scope.currentUser = $sessionStorage.user;
@@ -8,8 +8,12 @@ headerModule.controller('userCtrl', ['$scope', '$sessionStorage', '$element', fu
 
 	$scope.logOut = function(){
 		delete $sessionStorage.user;
-		var element = document.getElementByClass('current-user');
-		element.remove();
+		if(document.getElementsByClassName('current-user') == 'undefine'){
+			$(".current-user").remove();
+		}
+		else
+			var element = document.getElementsByClassName('current-user')[0];
+			element.parentNode.removeChild(element);		
 	};
 
 }]);

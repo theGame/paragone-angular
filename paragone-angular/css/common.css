@@ -100,7 +100,7 @@
 	.navbar-default .navbar-nav>li>a{ color: #fff; }
 	header .current-user{
 		display: inline;
-		position: fixed;
+		position: absolute;
 		top: 40px;
 		right: 0;
 		background-color: #011e41;
@@ -114,6 +114,9 @@
 		color: #fff;
 		border-top-left-radius: 4px;
 		border-bottom-left-radius: 4px;
+	}
+	header .user-name{
+		border-right: 2px solid #f0ad4e;
 	}
 	header .current-user .user-name:hover a{
 		color: #fff;
