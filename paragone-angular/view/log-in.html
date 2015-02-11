@@ -6,12 +6,12 @@
 				<span data-ng-class="'login-title'">username</span>
 				<p>
 					<input type="text" name="username" data-ng-model="username" value="username" placeholder="username" data-ng-class="'form-control'" autocomplete="on" autofocus required>
-					<span ng-show="(loginForm.username.$dirty || submitted) && loginForm.username.$error.required">
+					<span ng-show="(loginForm.username.$dirty) && loginForm.username.$error.required">
 				</p>
 				<span data-ng-class="'login-title'">password</span>
 				<p>
 					<input type="password" name="pass" data-ng-class="'form-control'" data-ng-model="pass"  placeholder="password" required>
-					<span ng-show="(loginForm.pass.$dirty || submitted) && loginForm.pass.$error.required">
+					<span ng-show="(loginForm.pass.$dirty) && loginForm.pass.$error.required">
 				</p>
 				<P>
 					<input type="checkbox" data-ng-model="checkboxRemember" name="rememberMe" value=""><a data-ng-click="rememberMe()" data-ng-class="'remember-me'">Remember me !</a> 

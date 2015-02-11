@@ -54,4 +54,12 @@
 			</div>
 		</div>
 	</div>
+	<div data-ng-show="currentUser" data-ng-class="'current-user'" data-ng-controller="userCtrl">
+		<div data-ng-class="'user-name'">
+			<a data-ng-href="/#/{{currentUser}}/" data-ng-bind="currentUser"></a>
+		</div>
+		<div data-ng-class="'remove-user-button'">
+			<span data-ng-class="'glyphicon glyphicon-remove'" data-ng-click="logOut();"></span>
+		</div>
+	</div>
 </header>

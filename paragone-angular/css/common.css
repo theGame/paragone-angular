@@ -98,7 +98,50 @@
 		background: #fff;
 	}
 	.navbar-default .navbar-nav>li>a{ color: #fff; }
-	
+	header .current-user{
+		display: inline;
+		position: fixed;
+		top: 40px;
+		right: 0;
+		background-color: #011e41;
+		border: 2px solid #f0ad4e;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-right: none;
+	}
+	header .current-user .user-name:hover{
+		background-color: #f0ad4e;
+		color: #fff;
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+	header .current-user .user-name:hover a{
+		color: #fff;
+	}
+	header .current-user .user-name{
+		padding: 10px;
+	}
+	header .current-user .user-name a{
+		color: #f0ad4e;
+		text-decoration: none;
+	}
+	header .current-user div{
+		float: left;
+	}
+	header .current-user .remove-user-button{
+		padding: 10px;
+	}
+	header .current-user .remove-user-button:hover{
+		background-color: #f0ad4e;
+		color: #fff;
+	}
+	header .current-user .remove-user-button span{
+		color: #f0ad4e;
+		cursor: pointer;
+	}
+	header .current-user .remove-user-button:hover span{
+		color: #fff;
+	}
 
 /* END HEADER */
 
