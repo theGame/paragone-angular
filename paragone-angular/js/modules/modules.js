@@ -8,7 +8,11 @@ var app = /**
 *
 * Description
 */
-angular.module('paragoneApp', ['slaider', 'topLink', 'middleInfo', 'footerLink', 'investor', 'newsBlock', 'allComment', 'login', 'pageComment', 'ngRoute', 'ui.bootstrap', 'ngStorage']);
+angular.module('paragoneApp', ['slaider', 'topLink', 'middleInfo', 
+	'footerLink', 'investor', 'newsBlock',
+ 	'allComment', 'login', 'pageComment', 
+ 	'register', 'ngRoute', 'ui.bootstrap', 
+ 	'ngStorage']);
 
 //configuration route
 app.config(['$routeProvider',function($routeProvider) {
@@ -28,7 +32,7 @@ app.config(['$routeProvider',function($routeProvider) {
 			controller : 'loginCtrl'
 		})
 		.when('/register/', {
-			templateUrl : 'view/register.html',
+			templateUrl : 'view/register-view.html',
 			controller : 'registerCtrl'
 		})
 		.otherwise({
@@ -106,3 +110,11 @@ var login = /**
 * Description
 */
 angular.module('login', []);
+
+
+var register = /**
+*	Module
+*
+* Description
+*/
+angular.module('register', []);
