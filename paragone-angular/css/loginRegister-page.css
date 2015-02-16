@@ -167,3 +167,11 @@
 	color:#ffcc33;
 	font-weight: bold;
 }
+.register-page .logo-img{
+	background-image: url('../img/logo.png');
+	width: 201px;
+	height: 105px;
+}
+
+
+/* END REGISTER PAGE */

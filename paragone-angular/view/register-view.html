@@ -1,18 +1,17 @@
 <div data-ng-class="'login-page register-page'" ng-controller="registerCtrl">
 	<div class="container">
         <div class="row centered-form">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
+        <div class="col-md-12 col-md-6 col-md-offset-3">
         	<div class="panel panel-default">
         		<div class="panel-heading">
 			    		<h3 class="panel-title">Please fill in <i>registration</i> form</h3>
 			 			</div>
 			 			<div class="panel-body">
-			    		<form role="form">
+			    		<form role="form" type="POST" ng-click="register()" name="register">
 			    			<div class="row">
 			    				<div class="col-xs-6">
-			    					<div class="form-group">
-			                <input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name">
+			    					<div data-ng-class="'form-group'">
+			                			<input type="text" name="first_name" id="first_name" data-ng-class="'form-control'" placeholder="First Name">
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-6 ">
@@ -45,7 +44,7 @@
 			    	</div>
 	    		</div>
     		</div>
+    		<div class="col-md-12 col-md-3 col-md-offset-5 logo-img"></div>
     	</div>
-    	<divclass="col-md-3"></div>
     </div>
-</div>
+</div> 
