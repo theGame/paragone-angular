@@ -11,34 +11,34 @@
 			    			<div class="row">
 			    				<div class="col-xs-6">
 			    					<div data-ng-class="'form-group'">
-			                			<input type="text" name="first_name" id="first_name" data-ng-class="'form-control'" placeholder="First Name">
+			                			<input type="text" data-ng-model="first_name" name="first_name" id="first_name" data-ng-class="'form-control'" placeholder="First Name" autofocus required>
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-6 ">
 			    					<div class="form-group">
-			    						<input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last Name">
+			    						<input type="text" data-ng-model="last_name" name="last_name" id="last_name" data-ng-class="'form-control'" placeholder="Last Name" required>
 			    					</div>
 			    				</div>
 			    			</div>
 
 			    			<div class="form-group">
-			    				<input type="email" name="email" id="email" class="form-control" placeholder="Email Address">
+			    				<input type="email" data-ng-model="email" name="email" id="email" data-ng-class="'form-control'" placeholder="Email Address" required>
 			    			</div>
 
 			    			<div class="row">
 			    				<div class="col-xs-6 ">
 			    					<div class="form-group">
-			    						<input type="password" name="password" id="password" class="form-control" placeholder="Password">
+			    						<input type="password" data-ng-model="password" name="password" id="password" data-ng-class="'form-control'" placeholder="Password" required>
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-6 ">
 			    					<div class="form-group">
-			    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control" placeholder="Confirm Password">
+			    						<input type="password" data-ng-model="password_confirmation" name="password_confirmation" id="password_confirmation" data-ng-class="'form-control'" placeholder="Confirm Password" required>
 			    					</div>
 			    				</div>
 			    			</div>
 			    			
-			    			<input type="submit" value="Register" class="btn btn-info btn-block">
+			    			<input type="submit" value="Register" data-ng-class="'btn btn-info btn-block'">
 			    		
 			    		</form>
 			    	</div>
