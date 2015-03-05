@@ -100,6 +100,13 @@
     border-radius: 20px;
     padding: 10px;
 }
+.login-page .validation-field{
+  	position: absolute;
+  	right: 19px;
+  	font: icon;
+  	margin-top: -25px;
+  	color: red;
+}
 .login-page .dialog-login-user{
 	color: #ffcc33;
 	font-size: 22px;

@@ -12,28 +12,33 @@
 			    				<div class="col-xs-6">
 			    					<div data-ng-class="'form-group'">
 			                			<input type="text" data-ng-model="first_name" name="first_name" id="first_name" data-ng-class="'form-control'" placeholder="First Name" autofocus required>
+			                			<span ng-show="(register.first_name.$dirty) && register.first_name.$error.required" data-ng-class="'validation-field'">Can't be empty!</span>
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-6 ">
 			    					<div class="form-group">
 			    						<input type="text" data-ng-model="last_name" name="last_name" id="last_name" data-ng-class="'form-control'" placeholder="Last Name" required>
+			    						<span ng-show="(register.last_name.$dirty) && register.last_name.$error.required" data-ng-class="'validation-field'">Can't be empty!</span>
 			    					</div>
 			    				</div>
 			    			</div>
 
 			    			<div class="form-group">
 			    				<input type="email" data-ng-model="email" name="email" id="email" data-ng-class="'form-control'" placeholder="Email Address" required>
+			    				<span ng-show="(register.email.$dirty) && register.email.$error.required" data-ng-class="'validation-field'">Can't be empty!</span>
 			    			</div>
 
 			    			<div class="row">
 			    				<div class="col-xs-6 ">
 			    					<div class="form-group">
 			    						<input type="password" data-ng-model="password" name="password" id="password" data-ng-class="'form-control'" placeholder="Password" required>
+			    						<span ng-show="(register.password.$dirty) && register.password.$error.required" data-ng-class="'validation-field'">Can't be empty!</span>
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-6 ">
 			    					<div class="form-group">
 			    						<input type="password" data-ng-model="password_confirmation" name="password_confirmation" id="password_confirmation" data-ng-class="'form-control'" placeholder="Confirm Password" required>
+			    						<span ng-show="(register.password_confirmation.$dirty) && register.password_confirmation.$error.required" data-ng-class="'validation-field'">Can't be empty!</span>
 			    					</div>
 			    				</div>
 			    			</div>
