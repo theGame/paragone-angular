@@ -1,149 +1,45 @@
 /* START LOG IN PAGE */
+.login-page { 
+	background: url('../img/slider/01.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: absolute;
+  	bottom: 0;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+}
 
-.login-page{
-	position: absolute;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    overflow : hidden;
-	background-color: #011e41;
+.login-page .panel-default {
+	opacity: 0.97;
+	filter: alpha(opacity=97);
+	-moz-opacity: 0.97;
+	-khtml-opacity: 0.97;
+	margin-top:30px;
 }
-.login-page .dialog-login-no-user{
-	background-color: #fff;
-    width:300px;
-    height:270px;
-    position:absolute;
-    left:50%;
-    top:50%;
-    margin:-130px 0 0 -150px;
-    border-radius: 20px;
-    padding: 10px;
+.login-page .form-group.last { margin-bottom:0px; }
+.dialog-login-user{
+	margin-top: 30px;
 }
-.login-page .dialog-login-no-user h2{
-	color: #003333;
-	margin-top: 0;
-	text-align: center;
-}
-.login-page span.login-title{
-	color: #003333;
-	text-transform: lowercase;
-	font-size: 18px;
-	font-weight: 700;
-	display: block;
-}
-.login-page span.login-title:first-letter{
-	color: #ffcc33;
-	font-size: 22px;
-	text-transform: uppercase;
-	display: inline;
-}
-.login-page .remember-me{
-	padding-left: 5px;
-	position: absolute;
+.login-page .logo-img{
+	background-image: url('../img/logo.png');
+	width: 201px;
+	height: 105px;
 	cursor: pointer;
 }
-.login-page .sing-in{
-	float: right;
-	position: relative;
-	bottom: 50px;
-}
-/*---button generator----*/
-.login-page .btn-login { 
-  color: #ffffff; 
-  background-color: #004394; 
-  border-color: #F3F7B4; 
-} 
- 
-.login-page .btn-login:hover, 
-.login-page .btn-login:focus, 
-.login-page .btn-login:active, 
-.login-page .btn-login.active, 
-.login-page .open .dropdown-toggle.btn-login { 
-  color: #ffffff; 
-  background-color: #0958B8; 
-  border-color: #F3F7B4; 
-} 
- 
-.login-page .btn-login:active, 
-.login-page .btn-login.active, 
-.login-page .open .dropdown-toggle.btn-login { 
-  background-image: none; 
-} 
- 
-.login-page .btn-login.disabled, 
-.login-page .btn-login[disabled], 
-.login-page fieldset[disabled] .btn-login, 
-.login-page .btn-login.disabled:hover, 
-.login-page .btn-login[disabled]:hover, 
-.login-page fieldset[disabled] .btn-login:hover, 
-.login-page .btn-login.disabled:focus, 
-.login-page .btn-login[disabled]:focus, 
-.login-page fieldset[disabled] .btn-login:focus, 
-.login-page .btn-login.disabled:active, 
-.login-page .btn-login[disabled]:active, 
-.login-page fieldset[disabled] .btn-login:active, 
-.login-page .btn-login.disabled.active, 
-.login-page .btn-login[disabled].active, 
-.login-page fieldset[disabled] .btn-login.active { 
-  background-color: #004394; 
-  border-color: #F3F7B4; 
-} 
-/*----------------------*/
-.login-page .dialog-login-user{
-	background-color: #fff;
-    width:300px;
-    position:absolute;
-    left:50%;
-    top:50%;
-    margin:-130px 0 0 -150px;
-    border-radius: 20px;
-    padding: 10px;
-}
-.login-page .validation-field{
-  	position: absolute;
-  	right: 19px;
-  	font: icon;
-  	margin-top: -25px;
-  	color: red;
-}
-.login-page .dialog-login-user{
-	color: #ffcc33;
-	font-size: 22px;
-	text-transform: uppercase;
-}
-.login-page .dialog-login-user p{
-	text-align: center;
-	color: #003333;
-	text-transform: lowercase;
-	font-size: 15px;
-	font-weight: 700;
-}
-.login-page .dialog-login-user ul{
-	color: #337ab7;
-	font-size: 15px;
-	font-weight: 700;
-	text-align: center;
-}
-.login-page .dialog-login-user .nav-stacked>li:hover{
-	border: solid 1px;
-	border-radius: 5px;
-}
-.login-page .dialog-login-user .nav>li>a:hover, .login-page .dialog-login-user .nav>li>a:focus{
-	background-color: #ffcc33;
-	opacity: 0.7;
-	filter: alpha(Opacity=70);
-}
-.login-page .dialog-login-user p span.first-l{
-	display: inline-block;
-}
-.login-page .dialog-login-user p span.first-l:first-letter{
-	text-transform: uppercase !important;
-	color: #ffcc33;
-}
+
 /* END LOG IN PAGE */
 
 /*START REGISTER PAGE */
+.ng-scope.login-page.register-page{
+	position: absolute;
+  	bottom: 0;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+}
 .register-page .new-user{
 	background-color: #fff;
     width:300px;
@@ -163,7 +59,7 @@
 }
 
 .register-page .centered-form .panel{
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.7);
 	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
 }
 .register-page .panel-title i{
@@ -178,6 +74,7 @@
 	background-image: url('../img/logo.png');
 	width: 201px;
 	height: 105px;
+	cursor: pointer;
 }
 
 
