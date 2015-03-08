@@ -39,6 +39,7 @@ login.controller('loginCtrl', ['$scope', '$sessionStorage', '$location', functio
 
 	$scope.logOut = function(){
 		delete $sessionStorage.user;
+		$location.path('/#/login/');
 	};
 
 	$scope.rememberMe = function(){
@@ -47,6 +48,10 @@ login.controller('loginCtrl', ['$scope', '$sessionStorage', '$location', functio
 		}
 		else
 			document.getElementsByName('rememberMe')[0].checked = false;
+	}
+
+	$scope.redirect = function(){
+		$location.path('/#/');
 	}
 
 }]);

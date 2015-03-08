@@ -13,11 +13,10 @@
 }
 
 .login-page .panel-default {
-	opacity: 0.97;
-	filter: alpha(opacity=97);
-	-moz-opacity: 0.97;
-	-khtml-opacity: 0.97;
 	margin-top:30px;
+}
+.login-page .panel.panel-default{
+	background: rgba(255, 255, 255, 0.7);
 }
 .login-page .form-group.last { margin-bottom:0px; }
 .dialog-login-user{
